@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Nunito;
+  src: url(assets/font/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(assets/font/Poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(assets/font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+:root {
+  --mint-green: hsla(155, 53%, 88%, 1);
+  --rose-taupe: hsla(336, 12%, 43%, 1);
+  --black: hsla(0, 0%, 3%, 1);
+  --tea-rose-red: hsla(0, 69%, 86%, 1);
+  --coral-pink: hsla(5, 100%, 77%, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}

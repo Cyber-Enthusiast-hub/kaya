@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Nunito;
+  src: url(../assets/font/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+:root {
+  --mint-green: hsla(155, 53%, 88%, 1);
+  --rose-taupe: hsla(336, 12%, 43%, 1);
+  --black: hsla(0, 0%, 3%, 1);
+  --tea-rose-red: hsla(0, 69%, 86%, 1);
+  --coral-pink: hsla(5, 100%, 77%, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+header {
+  color: white;
+  font-family: Nunito;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.nav {
+  display: flex;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  font-size: 1.3125rem;
+  margin-left: auto;
+  gap: 1.5rem;
+  list-style: none;
+
+  li {
+    scale: 1;
+    transition: all 0.5s ease;
+  }
+
+  li:hover {
+    scale: 1.1;
+  }
+}
+
+.nav-button {
+  display: none;
+  margin-left: auto;
+  font-size: 2rem;
+  z-index: 1000;
+  cursor: pointer;
+  scale: 1;
+  transition: all 0.5s ease;
+}
+
+.nav-button:hover {
+  scale: 1.1;
+}
+
+.hero {
+  background-image: url(../assets/img/jonathan-borba-CgWTqYxHEkg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+
+.welcome-text {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: white;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--rose-taupe);
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-button {
+    display: flex;
+  }
+
+  .welcome-text {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.nav-modal {
+  position: absolute;
+  height: 100%;
+  width: 50vw;
+  top: 0;
+  right: 0;
+  background-color: var(--rose-taupe);
+  color: white;
+  font-family: Nunito;
+  font-size: 1.3rem;
+  padding: 2rem;
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+  }
+}
+
+.display {
+  display: none;
+}
+
+.testimonials {
+  padding: 2rem;
+  text-align: center;
+
+  h3 {
+    color: var(--rose-taupe);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+.testimonial {
+  display: flex;
+  gap: 1rem;
+
+  p {
+    span {
+      color: var(--rose-taupe);
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    display: block;
+    gap: 1.5rem;
+  }
+}
+
+.products {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.product1 {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 3px 2px grey;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+    height: 50%;
+    background-image: url(../assets/img/jbaby_home_tout4_taco50-re_0.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.shop {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--rose-taupe);
+    padding: 0.5rem 1rem;
+  }
+}
